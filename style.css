@@ -67,7 +67,7 @@ footer {
     padding: 3px 0;
     position: fixed;
     bottom: 0;
-    width: 0%;
+    width: 100%;
 }
 
 img {
@@ -120,6 +120,11 @@ form button {
 
 form button:hover {
     background-color: #555;
+}
+
+#formMessage {
+    color: red;
+    margin-top: 10px;
 }
 
 #formMessage {
