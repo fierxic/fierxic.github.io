@@ -60,9 +60,11 @@ function getGreeting() {
     } else {
         greeting = "Good Evening!";
     }
+    console.log("Current Time: " + now);
+    console.log("Greeting: " + greeting);
     document.getElementById('greeting').textContent = greeting;
 }
-getGreeting();
+document.addEventListener('DOMContentLoaded', getGreeting);
 
 // Form Validation
 document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -70,6 +72,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const formMessage = document.getElementById('formMessage');
+
+    // Clear any previous messages
+    formMessage.textContent = "";
+    formMessage.style.color = "red";
 
     if (name === "" || email === "") {
         formMessage.textContent = "Please fill out all fields.";
@@ -79,6 +85,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         formMessage.textContent = "Form submitted successfully!";
         formMessage.style.color = "green";
     }
+
+    console.log("Form Submitted: ", name, email); // Debugging log
 });
 
 function validateEmail(email) {
