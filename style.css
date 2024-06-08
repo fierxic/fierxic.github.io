@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #98BFD0;
+    background-color: #4b7e94;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -18,13 +18,13 @@ header h1 {
 }
 
 nav {
-    background-color: #4D6489;
+    background-color: #173668;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 20px;
+    margin: 5;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +64,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 2,5px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
